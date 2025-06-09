@@ -118,24 +118,34 @@
 * **Problem:** Users ask why it’s a text input at all
 * **Fix:** Use dropdown or checkbox for visual roadmap items only
 
+### ✅ 11. No Visual Loading Feedback
+
+* **Problem:** When long operations like roadmap generation or memory fetching are running, there is no visual cue.
+* **Impact:** Users may think the app is frozen or broken.
+* **Fix:**
+
+  * Add "Loading..." text or spinner when running AI calls
+  * Use `gr.update(visible=True)` to show loading state during operations
+  * Optional: Add animated loading bar or overlay
+
 ---
 
 ## 💡 TIER 3: Minor Polish & Community Feedback
 
-### ✅ 11. Users Don’t Know What To Do First
+### ✅ 12. Users Don’t Know What To Do First
 
 * **Fix:**
 
   * Add "Try this first" box in Welcome
   * Example: "Generate a plan, then check your Memo"
 
-### ✅ 12. Tabs Don’t Explain Themselves
+### ✅ 13. Tabs Don’t Explain Themselves
 
 * **Fix:**
 
   * Add Markdown header in each tab like: `"This is your task planner."`
 
-### ✅ 13. Some UI Text is Too Gen Z
+### ✅ 14. Some UI Text is Too Gen Z
 
 * **Examples:** "uwu", "ASK BITCHES IRL"
 * **Fix:** Remove or toggle via "Fun Mode"
@@ -144,7 +154,7 @@
 
 ## 🔒 TIER 4: NSFW & Safety Blocking
 
-### ✅ 14. Users Enter Inappropriate Words (e.g. "balls")
+### ✅ 15. Users Enter Inappropriate Words (e.g. "balls")
 
 * **Problem:** Even joke entries lower app credibility for serious users
 * **Fix Plan:**
@@ -163,16 +173,17 @@
 
 ## 📆 Summary of Fix Actions (Quick List)
 
-| Area       | Action                                                     |
-| ---------- | ---------------------------------------------------------- |
-| User ID    | Clarify it's local only. Show feedback. Use it dynamically |
-| Steps      | Reset state on new plan. Match against correct length      |
-| Rewards    | Show confirmation, lock out extras                         |
-| Welcome UX | Break into steps. Add explainer video                      |
-| Tabs       | Reorder. Add 1-line explanation per tab                    |
-| NSFW       | Add global text validator with filter list                 |
-| Labels     | Rewrite all vague or misleading field prompts              |
-| Calendar   | Hide if unsupported. Validate before launch                |
+| Area          | Action                                                     |
+| ------------- | ---------------------------------------------------------- |
+| User ID       | Clarify it's local only. Show feedback. Use it dynamically |
+| Steps         | Reset state on new plan. Match against correct length      |
+| Rewards       | Show confirmation, lock out extras                         |
+| Welcome UX    | Break into steps. Add explainer video                      |
+| Tabs          | Reorder. Add 1-line explanation per tab                    |
+| NSFW          | Add global text validator with filter list                 |
+| Labels        | Rewrite all vague or misleading field prompts              |
+| Calendar      | Hide if unsupported. Validate before launch                |
+| Loading State | Show loading message/spinner during LLM calls              |
 
 ---
 
@@ -183,3 +194,4 @@ Let me know if you'd like:
 * A GitHub issue tracker auto-generated from this
 * Code patch output for NSFW, ID fix, roadmap bugs
 * LLM fine-tuning dataset built from these categories
+
