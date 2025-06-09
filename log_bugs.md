@@ -31,6 +31,10 @@ Problem: Too overwhelming intro/welcome tab
 Impact: Makes users freak out and overwhelmed/confusing users with account thingy
 Fix: Aligning left and right + explaining features properly
 
+Fixing 1 - I had duplicated code which caused these issues im facing; fixing it now. Need to word it like users DONT need to keep logging in with email, number.ect
+Username for now despite security concerns (Prefacing it)
+
+
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
 * **Problem:** Users think they must log in or create an account because the field is labeled vaguely.
