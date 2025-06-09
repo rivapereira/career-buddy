@@ -38,6 +38,12 @@ Fixing 2 - I need to remove certain buttons and figure out what is going wrong s
 
 Fixing 3 - Indetation errors....everywehre in Gtab
 
+Fixing 4 - goal input not defined, likely not defined within proper blocks sobs
+
+Fixing 5 - More Gr.row indentation errors its overrrr
+
+Fixing 6 - 
+
 
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
