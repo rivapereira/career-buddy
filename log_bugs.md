@@ -48,6 +48,8 @@ https://console.apify.com/actors/5fajYOBUfeb6fgKlB/input?addFromActorId=5fajYOBU
 
 Fixing 7 - need to fix discrepancy issue by making sure Road + Course progress -> Memo fluently by giving students an option of adding the course .ect from there to Memo
 
+Fixing 8 - Patching communism issue by using the welcome_id made by users b4 (oopsie daisy)
+
 
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
