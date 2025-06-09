@@ -26,7 +26,7 @@
 
 ## 🔥 TIER 1: High-Priority Bugs & Core Confusions
 
-### BUG IN PROGRESS FIXING (Usable for Beta Testers -> Alpha testing read below bugs):
+### BUG IN PROGRESS FIXING (Fixing Usability for Beta Testers -> Alpha testing read below bugs):
 Problem: Too overwhelming intro/welcome tab
 Impact: Makes users freak out and overwhelmed/confusing users with account thingy
 Fix: Aligning left and right + explaining features properly
