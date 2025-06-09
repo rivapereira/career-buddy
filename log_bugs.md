@@ -42,9 +42,11 @@ Fixing 4 - goal input not defined, likely not defined within proper blocks sobs
 
 Fixing 5 - More Gr.row indentation errors its overrrr
 
-Fixing 6 - Many people find it annoying sadly on the copy-paste option on Linkedln despite being the most ethical option so... i found a free web scraper that does something similar to what i want:
+Fixing 6 - Many people find it annoying sadly on the copy-paste option on Linkedln despite being the most ethical option so... i found a free web scraper that does something similar to what i want (for later)
 
 https://console.apify.com/actors/5fajYOBUfeb6fgKlB/input?addFromActorId=5fajYOBUfeb6fgKlB
+
+Fixing 7 - need to fix discrepancy issue by making sure Road + Course progress -> Memo fluently by giving students an option of adding the course .ect from there to Memo
 
 
 
