@@ -26,13 +26,18 @@
 
 ## 🔥 TIER 1: High-Priority Bugs & Core Confusions
 
-### BUG IN PROGRESS FIXING:
+### BUG IN PROGRESS FIXING (Usable for Beta Testers -> Alpha testing read below bugs):
 Problem: Too overwhelming intro/welcome tab
 Impact: Makes users freak out and overwhelmed/confusing users with account thingy
 Fix: Aligning left and right + explaining features properly
 
 Fixing 1 - I had duplicated code which caused these issues im facing; fixing it now. Need to word it like users DONT need to keep logging in with email, number.ect
 Username for now despite security concerns (Prefacing it)
+
+Fixing 2 - I need to remove certain buttons and figure out what is going wrong since too much token usage in places where its not needed
+
+Fixing 3 - Indetation errors....everywehre in Gtab
+
 
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
