@@ -26,6 +26,11 @@
 
 ## 🔥 TIER 1: High-Priority Bugs & Core Confusions
 
+### BUG IN PROGRESS FIXING:
+Problem: Too overwhelming intro/welcome tab
+Impact: Makes users freak out and overwhelmed/confusing users with account thingy
+Fix: Aligning left and right + explaining features properly
+
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
 * **Problem:** Users think they must log in or create an account because the field is labeled vaguely.
