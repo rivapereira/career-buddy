@@ -6,6 +6,24 @@
 
 ---
 
+## 🌟 User Feedback Summary (Positives & Work Needed)
+
+### ✨ Positives
+
+* Great concept for students & career starters
+* Helps with goal tracking across weeks
+* LinkedIn analysis is unique and helpful
+* Focused on real-world career planning instead of generic fluff
+
+### ⚖️ Work Needed
+
+* Working login system or persistent memory per user
+* More advanced, customizable career plans (not generic)
+* More intuitive UI/UX in Memo tab
+* LinkedIn analysis should support direct integration or file upload, avoid copy-paste overload
+
+---
+
 ## 🔥 TIER 1: High-Priority Bugs & Core Confusions
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
