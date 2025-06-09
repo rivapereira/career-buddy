@@ -62,6 +62,8 @@ Fixing 8 - Patching communism issue by using the welcome_id made by users b4 (oo
   * Change label to: `Choose your nickname (not email)`
   * Add helper text below: `Example: riva123 or @careerhackr`
   * Add toast/feedback: `✅ Welcome back, Riva!` after valid entry.
+ 
+  * STATUS -> Kind of Fixed -> Just need to indent app right and check back with focus group
 
 ### ✅ 2. All Users Treated as One ("Communism Bug")
 
