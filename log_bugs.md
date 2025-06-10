@@ -103,6 +103,37 @@ Fix 20 - Why..Life...Why, im trying to make my buttons make sense and not confus
 Fix 21 - ![image](https://github.com/user-attachments/assets/071971e1-f8d5-4239-928e-a3286f61b97b)
 Smexi
 
+Fix 22- Looking at my thing, i dont need Mark Step done as a card anymore. Users can just do it directly after generating a plan
+There will be a bunch of check boxes there. Maybe Users can select specific tasks to be moved to Memo-?  while the course title is labeled as a main goal
+Just so the homies dont forget it 
+
+Also syncing to Google Calendar DOES not work, period idk why
+
+Fix 23 - Actual fix im trying to  fix
+❌ Failed to save memory: 'HuggingFaceEmbeddings' object has no attribute 'get_text_embedding'
+/usr/local/lib/python3.10/site-packages/gradio/blocks.py:1897: UserWarning: A function (call_tavilly_rag) returned too many output values (needed: 2, returned: 3). Ignoring extra values.
+    Output components:
+
+and 
+
+A function (call_tavilly_rag) returned too many output values (needed: 2, returned: 3).
+
+BUG FIX THAT NEEDS TO HAPPEN:
+embedding = embed_model.embed_query(text_blob)
+tav_btn.click(
+    fn=call_tavilly_rag,
+    inputs=[user_id_state, goal_input],
+    outputs=[roadmap_output, sync_output, completed_steps_box]
+)
+
+flow.run_console()
+#==-> THIS IS HEADLESS SO RUN WITH NO HEAD
+
+
+
+
+### 0. I Need a Loading for Roadmap since it keeps jump scaring people
+
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
