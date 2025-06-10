@@ -78,6 +78,14 @@ I need to fix that
 
 Fix 13 - Okay so im trying to figure out how to make a gr.Group happen and make it look like a card cos #1 i got is my whole shebang is overwhelming
 
+Fix 14 - Fixing intro thingy by making it a card :3
+
+Fix 15  - FINALLY
+
+![image](https://github.com/user-attachments/assets/b32711bc-e097-4da5-945d-6f324a038241)
+
+
+
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
 * **Problem:** Users think they must log in or create an account because the field is labeled vaguely.
