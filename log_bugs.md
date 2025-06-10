@@ -142,6 +142,10 @@ If they click complete in Memo -> then they can unlock week 2 and so on
 itll also avoid the error above, unless you think different
 
 ⚠️ Calendar sync failed: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+
+25. ❌ No saved plan found for this goal. WHY ISNT SAVING THE GOAL ALSO-!?!?!?!?!?!?!?!? Its joever
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 ### 0. I Need a Loading for Roadmap since it keeps jump scaring people
