@@ -100,6 +100,9 @@ Nothing there yet tech so makes sense
 
 Fix 20 - Why..Life...Why, im trying to make my buttons make sense and not confuse freshers
 
+Fix 21 - ![image](https://github.com/user-attachments/assets/071971e1-f8d5-4239-928e-a3286f61b97b)
+Smexi
+
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
@@ -164,6 +167,8 @@ Fix 20 - Why..Life...Why, im trying to make my buttons make sense and not confus
   * Add tooltip (`info=`) on buttons: `Tavilly: Uses real-time web search` / `RAG: Uses your past data`
   * Add Markdown explainer at top of tab
   * Optional: Add "❓ What is this?" button with toggle modal
+ 
+  * STATUS - FIXED
 
 ---
 
