@@ -50,6 +50,8 @@ Fixing 7 - need to fix discrepancy issue by making sure Road + Course progress -
 
 Fixing 8 - Patching communism issue by using the welcome_id made by users b4 (oopsie daisy)
 
+Fixing 9 - its 4 AM...INDENTATION ERRORS WILL BE THE DEATH OF MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
 
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
