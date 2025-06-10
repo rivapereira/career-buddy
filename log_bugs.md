@@ -73,6 +73,9 @@ So...Now its basically like i need to change EVERYTHING to accept user_id its jo
 
 Fix 12 - Its almost 5 Am i think... i fixed it
 
+### BUG 0. I HAVE TWOOOOOOOOOOOOOOOOOOOOO BUTTONS FOR RECALL
+I need to fix that
+
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
 * **Problem:** Users think they must log in or create an account because the field is labeled vaguely.
