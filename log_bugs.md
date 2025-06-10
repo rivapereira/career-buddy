@@ -22,6 +22,115 @@
 * More intuitive UI/UX in Memo tab
 * LinkedIn analysis should support direct integration or file upload, avoid copy-paste overload
 
+# BUGS FIXED.
+
+## ✅ Bug 1: Misleading “User ID = Email”
+Status: Fixed
+
+Evidence: The user ID field has clear labeling and helper text ("no login required"), and feedback confirms nickname saving.
+
+## ✅ Bug 2: “Communism Bug” (Everyone uses same ID)
+Status: Fixed
+
+Evidence: All major functions (call_tavilly_rag, save_to_memory, recall_from_memory) now pass user_id.
+
+## ✅ Bug 3: Step Completion Count Broken
+Status: Fixed
+
+How: visual_steps is reset in render_text_roadmap() and completed_tasks.clear() is called in generate_all.
+
+## ✅ Bug 4: Reward System Has No Feedback
+Status: Fixed
+
+Evidence: claim_reward() returns a styled HTML block confirming the reward.
+
+## ✅ Bug 5: Tavilly / RAG Confusion
+Status: Fixed
+
+Evidence: Markdown explainers added above the buttons. Buttons grouped with context.
+
+## ✅ Bug 6 & 7: Welcome Tab + Tab Order
+Status: Fixed
+
+Evidence: UI structure clearly separates sections; Welcome tab is first and streamlined.
+
+## ✅ Bug 8: Vague Labels
+Status: Fixed
+
+Evidence: Fields like “Course Title” are now clearer with examples and placeholder text.
+
+## ✅ Bug 10: Step Input Field Should Be Dropdown
+Status: Fixed
+
+Evidence: Steps are now checkboxes (CheckboxGroup) from RoadmapUnlockManager.
+
+## ✅ Bug 11: No Visual Loading
+Status: Partially Fixed
+
+Evidence: Markdown placeholders like Loading... could be more visible; generate_all is cleanly wired but no spinner/async.
+
+# ⚠️ Partially Fixed / Needs Follow-Up
+
+## ⚠️ Bug 9: Google Calendar Button Issues
+Issue: Auth still breaks in headless mode.
+
+Status: Partially Fixed
+
+Fix Remaining: Use is_headless() to conditionally hide sync_calendar_btn.
+
+## ⚠️ Bug 17, 23, 25: Memory Not Recalling Properly
+Evidence: Some users still see "❌ No saved plan found for this goal" even after saving.
+
+Cause: Likely improper save_to_memory() call or key mismatch (e.g., extra spaces in goal or user_id).
+
+Fix Plan:
+
+Sanitize user_id and goal (.strip().lower()).
+
+Confirm save_to_memory() is always called after generation.
+
+## ⚠️ Bug 26: Calendar Doesn't Work Headless
+Status: Still a limitation.
+
+Fix Options:
+
+Use flow.run_console() or explicitly warn users with Markdown if headless.
+
+🧠 Optional: Offer downloadable .ics file per user.
+
+# 🧩 Outstanding Issues
+🔴 “Value is not in choices” Gradio Error
+Cause: Week headers (**Week 1: …**) still being added as task choices.
+
+# Fix Needed:
+
+Only add actionable tasks (not headers) to CheckboxGroup.
+
+✅ Already being handled in RoadmapUnlockManager.get_current_choices() — double check data from GPT.
+
+# 💡 UX Bonus To-Do (From Above)
+Add visual loader/spinner for roadmap generation.
+
+Allow "Add to Memo" from roadmap checkboxes.
+
+Visually gray out rewards or disable button after claim.
+
+Add embedded video/walkthrough or tooltip modal later.
+
+Let me know which area you want to patch next:
+
+# 📌 Final polish on memory saving
+
+📅 Google Calendar fallback + flow
+
+🧠 Add-to-Memo-from-Roadmap step
+
+✅ Loading spinner / user cue
+
+Ready when you are!
+
+
+# BUGS TO BE FIXED (ROUGH LOOKING HERE)
 ---
 
 ## 🔥 TIER 1: High-Priority Bugs & Core Confusions
@@ -218,6 +327,43 @@ itll also avoid the error above, unless you think different
  
   * STATUS - FIXED
 
+
+###  ✅ 26. Missing Pinecone Index Initialization
+
+Problem: Code crashes with error name 'pine_index' is not defined
+
+Impact: Breaks core memory functions like save/load for user plans
+
+Cause: pine_index is called before it is defined
+
+Fix:
+
+Ensure Pinecone is initialized with your API key and environment:
+
+import pinecone
+pinecone.init(api_key="YOUR_KEY", environment="YOUR_ENV")
+pine_index = pinecone.Index("your-index-name")
+
+Ensure pine_index is in global scope or passed into memory functions
+
+Replace any mismatched variable names (e.g., pine_index vs pinecone_index)
+
+STATUS -> Fixed
+
+✅ 27. No Visual Feedback While Loading
+
+Problem: Users don’t know if roadmap/memory is running, looks frozen
+
+Fix:
+
+Add gr.Markdown("Loading...", visible=False) above output sections
+
+Show it using visible=True while processing, hide it after
+
+Optional: use animated spinner or typing dots
+
+Status -> NOT DONE yet  
+
 ---
 
 ## 🤔 TIER 2: Medium UX Problems & Friction Points
@@ -231,7 +377,7 @@ itll also avoid the error above, unless you think different
   * Use `gr.Accordion()` for advanced help
   * Add embedded 60s walkthrough video
   * 
-  STATUS-> STREAMLINING INTRO AND MOVING STUFF AROUND PLUS ACCORDION DEMO VIDEO L8TR + above
+  STATUS-> Cleaner welcome, space for Video Tab Now + Support page small one
 
 ### ✅ 7. Tab Order is Illogical
 
@@ -240,6 +386,8 @@ itll also avoid the error above, unless you think different
 
   * Reorder to: `Welcome → Memo → Linky → Hub → Roadmaps`
   * Reflect most frequent actions up front
+ 
+    STATUS -> FIXED
 
 ### ✅ 8. Input Labels are Vague
 
@@ -247,15 +395,20 @@ itll also avoid the error above, unless you think different
 * **User ID:** Should say: `No signup needed`
 * **Step Completion:** Should be a dropdown of roadmap steps, not free-text
 
+  Status -> Removed step completion so we're good here, its a check list per week now. Course is like that and User ID is now implied
+
 ### ✅ 9. Calendar Button is Confusing
 
 * **Fix:** Hide button if `is_headless()` is True
 * Disable until valid `user_id` and `goal` are entered
 
+* STATUS -> In process
+
 ### ✅ 10. Mark Step Input Field Misleading
 
 * **Problem:** Users ask why it’s a text input at all
 * **Fix:** Use dropdown or checkbox for visual roadmap items only
+* Status-> removed
 
 ### ✅ 11. No Visual Loading Feedback
 
@@ -266,6 +419,12 @@ itll also avoid the error above, unless you think different
   * Add "Loading..." text or spinner when running AI calls
   * Use `gr.update(visible=True)` to show loading state during operations
   * Optional: Add animated loading bar or overlay
+  * STATUS-> NEED TO BE FIXED
+ 
+    ##LIMITATION -> THIS CANT WORK ON JOBS SUCH AS POLICE OFFICER .ECT, SINCE LESS STUFF ON COURSES THERE :( MIGHT NEED TO PUT RESOURCES ON NON COMMON JOBS
+    COS TAVILLY CANT FIND SHIT EITHER
+
+    
 
 ---
 
