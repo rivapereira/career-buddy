@@ -52,6 +52,24 @@ Fixing 8 - Patching communism issue by using the welcome_id made by users b4 (oo
 
 Fixing 9 - its 4 AM...INDENTATION ERRORS WILL BE THE DEATH OF MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
+Fixing 10 - runtime error
+Exit code: 1. Reason:   File "/home/user/app/app.py", line 1016
+    roadmap, sync, steps = call_tavilly_rag(user_id, goal)
+    ^
+IndentationError: expected an indented block after function definition on line 1015
+Container logs:
+
+===== Application Startup at 2025-06-10 00:16:15 =====
+
+  File "/home/user/app/app.py", line 1016
+    roadmap, sync, steps = call_tavilly_rag(user_id, goal)
+    ^
+IndentationError: expected an indented block after function definition on line 1015
+
+T-T..
+
+Fix 11- Code working, idiots dont
+So...Now its basically like i need to change EVERYTHING to accept user_id its joerver
 
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
@@ -65,7 +83,7 @@ Fixing 9 - its 4 AM...INDENTATION ERRORS WILL BE THE DEATH OF MEEEEEEEEEEEEEEEEE
   * Add helper text below: `Example: riva123 or @careerhackr`
   * Add toast/feedback: `✅ Welcome back, Riva!` after valid entry.
  
-  * STATUS -> Kind of Fixed -> Just need to indent app right and check back with focus group
+  * STATUS -> ALMOST Fixed -> Just need to indent app right and check back with focus group
 
 ### ✅ 2. All Users Treated as One ("Communism Bug")
 
@@ -78,7 +96,7 @@ Fixing 9 - its 4 AM...INDENTATION ERRORS WILL BE THE DEATH OF MEEEEEEEEEEEEEEEEE
   * Use format: `user_id:goal_slug` in Pinecone keys.
   * Optional: Validate ID format, strip whitespace.
  
-  STATUS -> IS COMMUNISM-?!?! KINDA FIXED, I FINALLY USED THE WELCOME_USER_ID I MADE...LET'S SEE 
+  STATUS -> IS COMMUNISM-?!?! ALMOST FIXED, I FINALLY USED THE WELCOME_USER_ID I MADE...LET'S SEE 
 
 ### ✅ 3. Step Completion Count is Broken
 
