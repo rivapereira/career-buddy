@@ -76,6 +76,8 @@ Fix 12 - Its almost 5 Am i think... i fixed it
 ### BUG 0. I HAVE TWOOOOOOOOOOOOOOOOOOOOO BUTTONS FOR RECALL
 I need to fix that
 
+Fix 13 - Okay so im trying to figure out how to make a gr.Group happen and make it look like a card cos #1 i got is my whole shebang is overwhelming
+
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
 * **Problem:** Users think they must log in or create an account because the field is labeled vaguely.
