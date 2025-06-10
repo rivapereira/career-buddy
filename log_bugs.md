@@ -98,6 +98,7 @@ IT CAN NOW SAVE USER IDS
 ![image](https://github.com/user-attachments/assets/5309596c-aa80-4079-959d-97ee915e0d3a)
 Nothing there yet tech so makes sense
 
+Fix 20 - Why..Life...Why, im trying to make my buttons make sense and not confuse freshers
 
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
