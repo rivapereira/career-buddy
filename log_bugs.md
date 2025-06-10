@@ -71,6 +71,7 @@ T-T..
 Fix 11- Code working, idiots dont
 So...Now its basically like i need to change EVERYTHING to accept user_id its joerver
 
+Fix 12 - Its almost 5 Am i think... i fixed it
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
