@@ -84,7 +84,7 @@ Fix 15  - FINALLY
 
 ![image](https://github.com/user-attachments/assets/b32711bc-e097-4da5-945d-6f324a038241)
 
-
+Fix 16 - Trying to fix the tabs and put it all in the same area, turns out this is actually...super easy to do. just put Gr. Tabs on top
 
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
@@ -110,7 +110,9 @@ Fix 15  - FINALLY
   * Use format: `user_id:goal_slug` in Pinecone keys.
   * Optional: Validate ID format, strip whitespace.
  
-  STATUS -> IS COMMUNISM-?!?! ALMOST FIXED, I FINALLY USED THE WELCOME_USER_ID I MADE...LET'S SEE 
+  STATUS -> IS COMMUNISM-?!?! ALMOST FIXED, I FINALLY USED THE WELCOME_USER_ID I MADE...LET'S SEE
+  KIND OF FIXED, Its actually a pine cone index. I added it last minute without changing a variable's name so i need to change it for it to work properly
+  
 
 ### ✅ 3. Step Completion Count is Broken
 
