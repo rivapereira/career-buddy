@@ -256,6 +256,11 @@ itll also avoid the error above, unless you think different
 
 26. Calendar...wasnt actually fixed, you cant do it locally cos its a headless thing so i have to figure out a more complicated way per user; why did i make this a feature-? meh im doubling down
 
+FIX 24- DUPLICATE TABS BC OF HEADLESS, FIXING RN 
+![image](https://github.com/user-attachments/assets/853c1cd2-a521-4071-9217-961c492532a7)
+
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 ### 0. I Need a Loading for Roadmap since it keeps jump scaring people
