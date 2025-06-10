@@ -144,6 +144,8 @@ Fix 12 - Its almost 5 Am i think... i fixed it
   * Break into steps: ID input → goal choice → roadmap demo
   * Use `gr.Accordion()` for advanced help
   * Add embedded 60s walkthrough video
+  * 
+  STATUS-> STREAMLINING INTRO AND MOVING STUFF AROUND PLUS ACCORDION DEMO VIDEO L8TR + above
 
 ### ✅ 7. Tab Order is Illogical
 
