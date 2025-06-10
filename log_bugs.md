@@ -86,6 +86,20 @@ Fix 15  - FINALLY
 
 Fix 16 - Trying to fix the tabs and put it all in the same area, turns out this is actually...super easy to do. just put Gr. Tabs on top
 
+Fix 17- okay fixing new error basically means i need to put an if-else stopping ppl and basically tell them they dont have anything...saved.
+Oh gods i need to make that button to save the user_id and the one under it for recalling the data. OOPS
+
+Fix 18 - Oops okay now i understand the errors, 
+![image](https://github.com/user-attachments/assets/62f27c4f-4a4a-4754-9759-a12c77212e86)
+
+Fix 19 - ![image](https://github.com/user-attachments/assets/e0927d2a-20f5-4280-a900-43d9059c3113)
+IT CAN NOW SAVE USER IDS
+
+![image](https://github.com/user-attachments/assets/5309596c-aa80-4079-959d-97ee915e0d3a)
+Nothing there yet tech so makes sense
+
+
+
 ### ✅ 1. "User ID = Email?" Misleading Labeling
 
 * **Problem:** Users think they must log in or create an account because the field is labeled vaguely.
@@ -98,13 +112,14 @@ Fix 16 - Trying to fix the tabs and put it all in the same area, turns out this 
   * Add toast/feedback: `✅ Welcome back, Riva!` after valid entry.
  
   * STATUS -> FIXED, WONT BE AN ISSUE, JUST NEED TO FIX ALL THE FUNCTIONS USING IT
+  * OFFICIALLY FIXED YESS
 
 ### ✅ 2. All Users Treated as One ("Communism Bug")
 
 * **Problem:** Everyone’s data is saved under the default ID `user123`.
 * **Impact:** Overwrites memory, mixes roadmaps, incorrect rewards, communal state.
 * **Cause:** Hardcoded ID used in `save_to_memory()` and `recall_from_memory()`.
-* **Fix:**
+* **Fix:** 
 
   * Pass actual input from `user_id` field to all memory-related calls.
   * Use format: `user_id:goal_slug` in Pinecone keys.
@@ -112,6 +127,7 @@ Fix 16 - Trying to fix the tabs and put it all in the same area, turns out this 
  
   STATUS -> IS COMMUNISM-?!?! ALMOST FIXED, I FINALLY USED THE WELCOME_USER_ID I MADE...LET'S SEE
   KIND OF FIXED, Its actually a pine cone index. I added it last minute without changing a variable's name so i need to change it for it to work properly
+  NOW OFFICIALLY FIXED :3
   
 
 ### ✅ 3. Step Completion Count is Broken
