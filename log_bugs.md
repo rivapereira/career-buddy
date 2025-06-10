@@ -140,6 +140,7 @@ Nothing there yet tech so makes sense
   * Ensure `visual_steps = steps` is called in `render_text_roadmap()`
   * Clamp all completions to existing steps
   * Reset `completed_tasks.clear()` on new plan generation
+  * STATUS = IN PROCESS NEED TO CHECK IF IT WORKED
 
 ### ✅ 4. Reward System Has No Feedback
 
