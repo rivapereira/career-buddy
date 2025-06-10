@@ -129,8 +129,20 @@ tav_btn.click(
 flow.run_console()
 #==-> THIS IS HEADLESS SO RUN WITH NO HEAD
 
+22. OKAY I KNOW WHAT TO DO HERE, IM BASICALLY FIXING THE CALENDAR AUTHORIZATION RN
 
+23. OKAKY Y I NEED TO LIKE MAKE PPL SAVE THEIR CAREER GOALS OR MY THING IS STOOOOOOOOOOOPID AND WONT RECALL
 
+24. [media pointer="file-service://file-EHeXZ2e3jHV3fxgHaHEKsf"]
+Okay i got an idea, lets switch the logic a little here: 
+NUMBER 1) If you look at the 'tasks' it has weeks there, we dont need that as tasks but keep it as titles here. The users basically can only select Week 1's tasks and add only that to google calendar + memo
+
+If they click complete in Memo -> then they can unlock week 2 and so on
+
+itll also avoid the error above, unless you think different
+
+⚠️ Calendar sync failed: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 ### 0. I Need a Loading for Roadmap since it keeps jump scaring people
 
