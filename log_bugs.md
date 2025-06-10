@@ -145,6 +145,7 @@ itll also avoid the error above, unless you think different
 
 25. ❌ No saved plan found for this goal. WHY ISNT SAVING THE GOAL ALSO-!?!?!?!?!?!?!?!? Its joever
 
+26. Calendar...wasnt actually fixed, you cant do it locally cos its a headless thing so i have to figure out a more complicated way per user; why did i make this a feature-? meh im doubling down
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
