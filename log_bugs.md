@@ -7,6 +7,7 @@
 7) Need to clean my code and reduce the size so it runs fucking faster -> use pipelines REWARDS IS TAKING 2 MINUTES TOO WAHH
 8) Instead of adding all the steps into the database -> maybe make it title which the user can add their own tasks under -> keep the heads and stuff on display per button
 9) Use the card treatment on Linkedln and Hub
+10) Completed tasks isnt working now and is having a silent error -> not loading
 
 
 # 🤖 Career Buddy - Consolidated Bug & UX Issue Tracker (v1.6 Full Log)
