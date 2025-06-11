@@ -2,8 +2,11 @@
 2) Get rid of the calendar feature FULLY, you can't navigate it rn
 3) Add Kofi
 4) Figure out why courses arent coming anymore
-5) Add Linkedln scraper API -> add more descriptive Linkedln help
+5) Add Linkedln scraper API -> add more descriptive Linkedln help -> Appiify
 6) Preface Road by saying it takes 3 min to load
+7) Need to clean my code and reduce the size so it runs fucking faster -> use pipelines REWARDS IS TAKING 2 MINUTES TOO WAHH
+8) Instead of adding all the steps into the database -> maybe make it title which the user can add their own tasks under -> keep the heads and stuff on display per button
+9) Use the card treatment on Linkedln and Hub
 
 
 # 🤖 Career Buddy - Consolidated Bug & UX Issue Tracker (v1.6 Full Log)
