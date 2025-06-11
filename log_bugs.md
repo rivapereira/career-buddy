@@ -67,6 +67,8 @@ Evidence: Steps are now checkboxes (CheckboxGroup) from RoadmapUnlockManager.
 ## ✅ Bug 11: No Visual Loading
 Status: Partially Fixed
 
+## Simplifying Vis planner since i realized people aren't going to scroll dwn for things, so reducing number of buttons
+
 Evidence: Markdown placeholders like Loading... could be more visible; generate_all is cleanly wired but no spinner/async.
 
 # ⚠️ Partially Fixed / Needs Follow-Up
