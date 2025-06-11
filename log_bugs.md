@@ -1,3 +1,8 @@
+1) REMOVE 'Mark Step as Done' FULLY -> keep it as a bunch of tasks that can be added to Memo by the user
+2) Take out Google Calendar IMMEDIATELY -> Too little time to fix this so just stick to Memo -> Python Calendar showing up 
+3) 
+
+
 # 🤖 Career Buddy - Consolidated Bug & UX Issue Tracker (v1.6 Full Log)
 
 > Updated: June 2025
