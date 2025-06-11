@@ -135,6 +135,135 @@ Ready when you are!
 
 ## 🔥 TIER 1: High-Priority Bugs & Core Confusions
 
+
+🧨 🔥 CRITICAL FIXES (breaks core flows)
+1. 🐛 Gradio “value not in choices” bug
+Issue: **Week 1: ...** is getting passed into CheckboxGroup, but it's not part of .choices
+
+Fix:
+
+Ensure headers like “Week 1” are not returned from get_current_choices()
+
+Sanitize GPT output before passing to roadmap (steps = [s for s in steps if not s.lower().startswith("week ")])
+
+2. 🚨 Apify run fails: record-not-found
+Issue: You were using an actor ID instead of a task ID
+
+Fix:
+✅ Now use:
+
+http
+Copy
+Edit
+POST https://api.apify.com/v2/actor-tasks/rivapereira268~linkedin-profile-full-sections-scraper---no-cookies-task/runs
+Use the task ID in your function
+
+Poll the run status or use run-sync if you want the data instantly
+
+3. 💾 Failed to save memory: NoneType + str
+Fix:
+
+python
+Copy
+Edit
+if not user_id or not goal:
+    return False
+Add that early in save_to_memory(). Also user_id = user_id.strip().lower().
+
+4. 📉 "No saved plan found" despite clicking Generate
+Likely cause: save_to_memory() not called or fails silently
+
+Fix:
+
+Ensure call_tavilly_rag() → save_to_memory() has proper inputs
+
+Add debug print: print(f"[SAVE] user={user_id}, goal={goal}")
+
+🧼 UI POLISH + UX UPGRADES
+5. 🎨 Fix color mismatch in Career Planner tab
+The tab has a mismatched grey background
+
+Fix: set this CSS override:
+
+css
+Copy
+Edit
+#planner-card {
+  background-color: #1e1e1e !important;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+6. 🧠 LinkedIn analyzer should use Apify
+You’ve got the task ID set up
+
+What’s missing:
+
+Trigger Apify with username
+
+Wait (or poll) for results
+
+Parse response into your existing analyze_linkedin(...) function
+
+Fix Plan:
+
+Build: fetch_apify_data(username)
+
+Then: analyze_linkedin_from_json(response_data)
+
+7. 🧾 Add loading feedback for Tavilly/RAG
+Fix:
+
+python
+Copy
+Edit
+loading_text = gr.Markdown("⏳ Generating roadmap...", visible=False)
+...
+generate.click(
+    fn=generate_all_wrapper,
+    inputs=[...],
+    outputs=[...]
+)
+
+def generate_all_wrapper(...):
+    loading_text.update(visible=True)
+    result = generate_all(...)
+    loading_text.update(visible=False)
+    return result
+🎁 EXTRA POLISH FOR LAUNCH
+8. 🎥 Make walkthrough demo video
+✅ Keep it under 60–90 seconds
+
+✅ Show: Welcome → Nickname → Generate Plan → Add to Memo
+
+Use Loom, OBS, or built-in screen recorder
+
+9. ☕ Add Ko-fi support card in Welcome
+python
+Copy
+Edit
+with gr.Group(elem_id="support-box"):
+    gr.Markdown("❤️ *Career Buddy is free... but OpenAI + hosting aren’t.*")
+    gr.Markdown("[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/YOURNAME)", unsafe_allow_html=True)
+10. 📦 (Optional) Add tooltips on buttons:
+python
+Copy
+Edit
+gr.Button("🌐 Tavilly", info="Uses live web search to make your plan")
+gr.Button("📚 RAG", info="Pulls your past saved goal plan")
+📋 SUMMARY TO-DO LIST (TOMORROW)
+❗ Priority	Task
+🔥	Fix "Value not in choices" CheckboxGroup error
+🔥	Fix Apify scraping using correct task ID
+🔥	Ensure save_to_memory() uses valid user_id + goal
+⚠️	Strip Week labels from task list
+✅	Connect Apify scrape to analyze_linkedin(...)
+✅	Add Ko-fi support section in Welcome
+✅	Fix Career Planner color & tabs (use planner-card)
+✅	Add "⏳ Loading..." while plan is generating
+🎥	Record demo video
+
+
 ### BUG IN PROGRESS FIXING (Fixing Usability for Beta Testers -> Alpha testing read below bugs):
 Problem: Too overwhelming intro/welcome tab
 Impact: Makes users freak out and overwhelmed/confusing users with account thingy
