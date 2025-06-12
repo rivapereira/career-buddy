@@ -1,3 +1,40 @@
+1)  GET RID OF THIS PART UNDER ROAD MAP +
+   Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer. Create a weekly roadmap for a UX designer.
+
+2) DONT PRINT THIS OUT PERDIOT IN PLAN, LET IT BE SHOWN IN COURSES AND MEMO AS ITIS BUT SAVE IT
+
+📅 To schedule your plan or check-ins, visit the Schedule Tab.
+
+📅 Week 1
+
+✅ Completed Tasks
+- **Action:** Choose a relevant course from the recommended list that aligns with your career goals (e.g., Coursera, Udacity, edX).
+- **Resource:** Use platforms like Coursera or Udacity to select a course.
+- **Milestone:** Complete the first module and set a weekly schedule to ensure consistent progress.
+- **Action:** Dive deeper into the course material and join an online community or forum related to the subject (e.g., Reddit, LinkedIn groups).
+- **Resource:** Participate in discussions on platforms like Reddit or LinkedIn to enhance learning.
+- **Milestone:** Share insights or questions in the community, receiving feedback or advice to solidify understanding.
+- **Action:** Start a mini project that utilizes the concepts learned from the course.
+- **Resource:** Use GitHub to document and version-control your project.
+- **Milestone:** Complete and document the mini project, showcasing your practical application of new skills.
+- **Action:** Prepare for and co
+
+3)Style the reward card with the text being black 
+![image](https://github.com/user-attachments/assets/25ccf7c1-2cf0-4a3a-af7e-a6f1e01e8c15)
+
+4) Make Appify work on Linkedln
+
+5) ---YOUR DONE THEN ITS FUCKING AROUND WITH GRADIO
+
+
+
+
+
+
+
+
+
+
 1) REMOVE 'Mark Step as Done' FULLY -> keep it as a bunch of tasks that can be added to Memo by the user
 2) Get rid of the calendar feature FULLY, you can't navigate it rn
 3) Add Kofi
