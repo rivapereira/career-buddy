@@ -28,15 +28,27 @@
 5) ---YOUR DONE THEN ITS FUCKING AROUND WITH GRADIO
 
 1) REMOVE 'Mark Step as Done' FULLY -> keep it as a bunch of tasks that can be added to Memo by the user
-2) Get rid of the calendar feature FULLY, you can't navigate it rn
-3) Add Kofi
-4) Figure out why courses arent coming anymore
-5) Add Linkedln scraper API -> add more descriptive Linkedln help -> Appiify
-6) Preface Road by saying it takes 3 min to load
-7) Need to clean my code and reduce the size so it runs fucking faster -> use pipelines REWARDS IS TAKING 2 MINUTES TOO WAHH
-8) Instead of adding all the steps into the database -> maybe make it title which the user can add their own tasks under -> keep the heads and stuff on display per button
-9) Use the card treatment on Linkedln and Hub
-10) Completed tasks isnt working now and is having a silent error -> not loading
+-Done
+
+3) Get rid of the calendar feature FULLY, you can't navigate it rn
+   -Done
+5) Add Kofi
+   -Done
+7) Figure out why courses arent coming anymore
+   -Done
+9) Add Linkedln scraper API -> add more descriptive Linkedln help -> Appiify
+    -Doneish
+11) Preface Road by saying it takes 3 min to load
+    -Doneish
+13) Need to clean my code and reduce the size so it runs fucking faster -> use pipelines REWARDS IS TAKING 2 MINUTES TOO WAHH
+    -nope
+15) Instead of adding all the steps into the database -> maybe make it title which the user can add their own tasks under -> keep the heads and stuff on display per button
+-nope
+
+16) 
+17) Use the card treatment on Linkedln and Hub
+    
+19) Completed tasks isnt working now and is having a silent error -> not loading
 
 
 # 🤖 Career Buddy - Consolidated Bug & UX Issue Tracker (v1.6 Full Log)
