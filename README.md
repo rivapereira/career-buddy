@@ -1,103 +1,73 @@
+# 🚀 Career Buddy – Your AI-Powered Career Planner
 
-# 🎓 Career Buddy: AI-Powered Career Planning Assistant
-
-Career Buddy is an AI-driven productivity and career guidance tool for students and early-career professionals. Designed as a weekly planner and personal coach, it merges task gamification, profile analyzers, LLMs, and retrieval-augmented generation into one seamless platform.
-
----
-
-## 🚀 Features
-
-### 🔁 Weekly Career Roadmap Generator
-- User inputs a career goal (e.g., "UX Designer")
-- Uses Tavily → GPT-4o → FLAN-T5 to generate weekly plans
-- Stores memory in Pinecone for personalized retrieval
-- Visualizes progress with ASCII-style diagrams
-
-### 🧠 Memo-Based RAG System
-- User notes are stored in `data/memo/`
-- Indexed with HuggingFace embeddings via LlamaIndex
-- Enables context-based queries using vector similarity
-
-### 👔 LinkedIn Profile Analyzer
-- Input: Headline, About, Experience, Skills, etc.
-- Output: Heuristic + regex-based feedback and tips
-
-### 💻 GitHub README Analyzer
-- Highlights missing sections and offers improvement checklists
-
-### ✅ Gamified Task & Reward System
-- Add tasks with tags like `Critical 🔴`, `Optional 🟢`
-- Weekly plan generator with progress tracking
-- Rewards like “Ice Cream” and “Spa Day” for 100% completion
-
-### 📅 Google Calendar Sync
-- OAuth-integrated event logging
-- Fallback option to book via Calendly
-
-### 📚 Course Discovery Engine
-- Pulls top courses from Class Central
-- Uses Tavily + summarizer to generate course-based plans
+Career Buddy is a personalized AI career coaching app that blends smart roadmap generation, weekly task planning, reward systems, and real-time web search. Designed for students, early-career professionals, and anyone looking to upskill, it uses a combination of Retrieval-Augmented Generation (RAG), LLM agents, and motivational gamification to keep you consistent and inspired.
 
 ---
 
-## ⚙️ Tech Stack
+## 📍 Author
+Riva Pereira
+AI Residency Cohort 4
+University of Wollongong (Dubai)
+This app was built as a capstone project to explore agentic AI and educational tools that go beyond static dashboards — into personalized, goal-driven guidance for real people.
 
-- **Frontend**: Gradio
-- **LLM**: OpenAI GPT-4o, Google FLAN-T5
-- **RAG**: LlamaIndex + HuggingFace + Pinecone
-- **Calendar Integration**: Google Calendar API
-- **Search Retrieval**: Tavily API
 
----
+## ✨ Features
 
-## 🧩 Planned Agentic Architecture
-
-- `TaskPlannerAgent`
-- `HabitCoachAgent`
-- `GitAnalyzerAgent`, `LinkedInAgent`
-- `ResourceFinderAgent`
-
-Designed to evolve into a multi-agent system using LangGraph or CrewAI with memory-enabled task routing.
-
----
-
-## ✅ What Works Well
-- Fast UI prototyping using Gradio
-- GPT-4o + T5 combo gives layered insights
-- Pinecone memory is responsive and reliable
-- Low token cost with high personalization
-
-## ⚠️ What Needs Improvement
-- No login/auth; relies on manually re-entered user ID
-- No persistent backend (currently ephemeral)
-- No export/import of progress
-- Agent routing and orchestration not yet live
+- 🧠 **AI Roadmap Generator**: Create a personalized 4–6 week plan based on your career goal using GPT-4o, Tavilly search, and dynamic summarization.
+- 🔁 **RAG-Based Memory**: Retrieve your past goals, summaries, and courses using Pinecone vector search + LlamaIndex embeddings.
+- 📚 **Course Recommender**: Auto-suggests top courses (Coursera, edX, Codecademy, etc.) for Data Analyst, UX Designer, Developer & more.
+- 🎯 **Gamified Task Manager**: Add weekly tasks with tags (Critical 🔴, Important 🟠, Optional 🟢), mark completion, and earn rewards.
+- 🎁 **Reward System**: Claim motivation boosters like spa day, watch party, or ice cream when milestones are hit.
+- 📅 **Calendar Sync**: Integrate with Google Calendar via OAuth to auto-schedule your weekly roadmap tasks.
+- 🧑‍💻 **LinkedIn & GitHub Analyzer**: AI feedback on your professional profile and README quality.
+- 🧪 **Gradio Interface**: Clean, simple UI using Gradio for demo deployment or local development.
 
 ---
 
-## 🛣️ Roadmap
+## 🛠 Tech Stack
 
-- [ ] Add agent routing (LangGraph / CrewAI)
-- [ ] Firebase Auth & session storage
-- [ ] JSON export/import
-- [ ] Dynamic reward personalization
-- [ ] Token-efficient summarization (emoji/icon-based)
+- **Frontend**: Gradio (Python)
+- **Backend**: Python (LangChain, LangGraph, OpenAI API, Transformers)
+- **Agents**: TaskPlanner, ResourceFinder, MotivationAgent (LangGraph-based)
+- **LLMs**: OpenAI GPT-4o, HuggingFace FLAN-T5
+- **RAG Engine**: LlamaIndex + Pinecone
+- **Auth**: Firebase Auth + Google OAuth
+- **Scheduling**: Google Calendar API
+- **Search**: Tavilly API (contextual career search)
+- **Gamification**: Custom rules + stateful reward logic
 
----
+## Folder Structure
+career-buddy/
+├── app.py
+├── requirements.txt
+├── data/
+│   └── memo/                 # Embedded user memory for RAG
+├── .env
+└── credentials.json          # Google OAuth config (not committed)
 
-## 💡 Why It Matters
+##🧩 Agentic AI Design
+Career Buddy uses modular AI agents with distinct responsibilities. Example agents:
+- 🎓 TaskPlannerAgent: Creates step-by-step weekly roadmaps
+- 📚 ResourceFinderAgent: Searches Tavilly for relevant learning content
+- 💬 MotivationAgent: Provides rewards and feedback messages
+- 🧠 MemoryAgent: Saves summaries and recall data with Pinecone vector embeddings
+  
+These agents communicate via LangGraph or your preferred multi-agent orchestration framework (e.g., CrewAI or Swarm).
 
-- Bridges mentorship gap for underserved students
-- Reduces career confusion and procrastination
-- Encourages consistent growth via gamified accountability
-- Easily integrable into student ecosystems or edtech platforms
+## 🔗 Integrations
+- 🗂 Pinecone VectorDB
+- 🔍 Tavilly Real-Time Search
+-🎓 Coursera, Udemy, Class Central (via links)
+- 🔒 Firebase Auth
+- 📊 Gradio Dashboard
 
----
+## 🧠 Example Use Cases
+Generate a roadmap to become a UX Designer in 6 weeks
+Schedule weekly career goals directly into Google Calendar
+Get actionable feedback on your LinkedIn or GitHub README
+Gamify your productivity with visual progress tracking and rewards
+Add your favorite course and track its completion over time
 
-## 🏁 Conclusion
 
-Career Buddy is more than a productivity app. It's a modular, extensible AI ecosystem designed to scale from a college hackathon MVP into a real-world, enterprise-grade coaching platform. With future upgrades, it can become a multi-agent, memory-augmented tool tailored to modern learning and working environments.
 
----
 
-🔗 **Built by Riva Pereira | AI Residency Capstone 2025**
