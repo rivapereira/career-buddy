@@ -18,6 +18,7 @@
 - **Resource:** Use GitHub to document and version-control your project.
 - **Milestone:** Complete and document the mini project, showcasing your practical application of new skills.
 - **Action:** Prepare for and co
+  
 
 3)Style the reward card with the text being black 
 ![image](https://github.com/user-attachments/assets/25ccf7c1-2cf0-4a3a-af7e-a6f1e01e8c15)
@@ -25,15 +26,6 @@
 4) Make Appify work on Linkedln
 
 5) ---YOUR DONE THEN ITS FUCKING AROUND WITH GRADIO
-
-
-
-
-
-
-
-
-
 
 1) REMOVE 'Mark Step as Done' FULLY -> keep it as a bunch of tasks that can be added to Memo by the user
 2) Get rid of the calendar feature FULLY, you can't navigate it rn
