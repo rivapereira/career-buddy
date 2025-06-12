@@ -2,6 +2,8 @@
 
 Career Buddy is a personalized AI career coaching app that blends smart roadmap generation, weekly task planning, reward systems, and real-time web search. Designed for students, early-career professionals, and anyone looking to upskill, it uses a combination of Retrieval-Augmented Generation (RAG), LLM agents, and motivational gamification to keep you consistent and inspired.
 
+Deployment link ->  https://huggingface.co/spaces/rivapereira123/career-buddy
+
 ---
 
 ## 📍 Author
