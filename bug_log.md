@@ -27,7 +27,8 @@ _Maintainer: Riva Pereira_
 | 014 | UI overwhelmed first-time users                    | ✅ Fixed      | Welcome flow simplified + card-based structure                        |
 | 015 | Duplicate recall/save buttons                      | ✅ Fixed      | Combined into one clean flow                                          |
 | 016 | Pinecone not initialized correctly                 | ✅ Fixed      | Global `pine_index` properly declared and tested                      |
-| 017 | Unsafe user inputs (e.g., “balls”) allowed         | ✅ Fixed      | NSFW keyword filter added to all text fields                          |
+| 017 | Odd UXUI On Nickname Buton                         | ✅ Fixed      | New css                                                               |
+
 
 ---
 
@@ -35,19 +36,17 @@ _Maintainer: Riva Pereira_
 
 | ID  | Issue Summary                                       | Priority | Notes                                                                 |
 |-----|-----------------------------------------------------|----------|-----------------------------------------------------------------------|
-| 018 | No visual loading during RAG/Tavilly calls          | ⚠️ Medium | Needs spinner/“Loading…” message on output blocks                     |
-| 019 | Calendar sync not usable in headless deployments    | ⚠️ Medium | Consider disabling entirely or using .ics file export                 |
-| 020 | Not all courses saving properly to memory           | ⚠️ Low    | Likely format issue in `save_to_memory()` call                        |
+| 018 | No visual loading during Generating Smart Plan      | ⚠️ Medium | Needs spinner/“Loading…” message on output blocks                     |
+| 019 | Calendar sync not usable in headless deployments    | ⚠️ Medium | Consider disabling entirely or using .ics file export                |
+| 020 | Not all courses saving properly to memory           | ⚠️ Low    | Likely format issue in `save_to_memory()` call                       |
 
 ---
 
 ## 🎯 FUTURE TO-DO
 
-- [ ] Add loading indicators for roadmap generation
 - [ ] Offer downloadable .ics file for headless calendar sync
 - [ ] Modularize reward + task logic into separate agents
 - [ ] Add onboarding walkthrough video (in Welcome tab)
-- [ ] Add "Fun Mode" toggle for Gen-Z-friendly text (e.g., uwu, memes)
 - [ ] Optimize token usage in summary + planner agents
 
 ---
