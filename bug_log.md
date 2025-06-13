@@ -49,6 +49,8 @@ _Maintainer: Riva Pereira_
 - [ ] Add onboarding walkthrough video (in Welcome tab)
 - [ ] Optimize token usage in summary + planner agents
 - [ ] Add a miku gradio theme -> https://huggingface.co/spaces/NoCrypt/miku
+- [ ] Optimize my Linkedln Automatic Apiffy version by integrating Nas.Io's advice there in detail
+- [ ] Add analytic features to it
 
 ---
 
