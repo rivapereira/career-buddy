@@ -1,0 +1,16 @@
+gradio==4.26.0
+openai>=1.0.0
+google-auth-oauthlib>=1.0.0
+langchain
+langchain-community
+langchain-openai
+langgraph
+tavily-python
+llama-index
+llama-index-embeddings-langchain
+sentence-transformers
+transformers
+pinecone
+firebase-admin
+python-dotenv
+
