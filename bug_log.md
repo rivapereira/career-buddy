@@ -39,6 +39,11 @@ _Maintainer: Riva Pereira_
 | 018 | No visual loading during Generating Smart Plan      | ⚠️ Medium | Needs spinner/“Loading…” message on output blocks                     |
 | 019 | Calendar sync not usable in headless deployments    | ⚠️ Medium | Consider disabling entirely or using .ics file export                |
 | 020 | Not all courses saving properly to memory           | ⚠️ Low    | Likely format issue in `save_to_memory()` call                       |
+| 021 | Rewards tab breaks flow; user must switch tabs to claim         | ⚠️ Medium | Move reward UI into “Generate” tab or allow modal popup inside flow   |
+| 022 | Task Difficulty + Tag is redundant and confusing                | ⚠️ High   | Replace with a single “Effort Level” dropdown using emoji indicators  |
+| 023 | Roadmap steps use vague labels like Milestone/Action/Resource   | ⚠️ Medium | Preprocess step text: auto-rewrite using emojis like 🎓, 🎯, 🔎          |
+| 024 | Feedback from LinkedIn/GitHub isn’t actionable                  | ⚠️ Medium | Add parser to extract tasks from feedback and insert into Memo        |
+
 
 ---
 
