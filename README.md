@@ -1,6 +1,7 @@
 # 🚀 Career Buddy – Your AI-Powered Career Planner
 
-![Career Buddy Preview](Career Buddy .png)
+![Career Buddy Preview]![image](https://github.com/user-attachments/assets/bfa0cae9-afbc-430a-8642-091dd05f7a6b)
+)
 
 > Personalized, motivational, and intelligent — Career Buddy helps you move from **goals to actions** with weekly plans, smart rewards, and AI-generated roadmaps.
 
